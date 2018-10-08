@@ -1,0 +1,205 @@
+/* Project on building a blog | Helio Goncalves 2018 */
+
+/* CSS RESETS */
+
+* {
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+/* Base Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color:#333;
+}
+
+/* Layout Styles */
+
+/*-----------------*
+*----- HEADER -----*/
+
+header {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.logo {
+    flex: 1;
+    padding: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 1.2rem;
+}
+
+.logo span {
+    display: block;
+    font-size: 2rem;
+    color: #777;
+}
+
+.casa-page {
+    width: 90px;
+    height: 90px;
+    background-color: lightblue;
+    border-radius: 0 0 0 100%;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.casa-page a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+}
+
+.casa-page span {
+    display: block;
+    transform: translate(5%, 25%);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    width: 180px;
+    letter-spacing: 1.5px;
+    z-index: -1;
+}
+
+.nav-links {
+    margin-top: 11px;
+    padding-left: 20px;
+    text-transform: capitalize;
+}
+
+.nav-links a {
+    color: #777;
+}
+
+.nav-links a:link {
+    /* color: yellow; */
+}
+
+.nav-links li {
+    margin-bottom: 5px;
+}
+
+.nav-links li a {
+    padding: 5px;
+}
+
+.nav-links a::after {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #222;
+}
+
+.nav-links li:nth-child(2) {
+    margin-left: 9px;
+}
+
+.nav-links li:nth-child(3) {
+    margin-left: 44px;
+}
+
+.nav-links li:nth-child(4) {
+    margin-left: 29px;
+}
+
+.nav-links li:nth-child(1) a::after {
+    margin-left: 24px;
+}
+
+.nav-links li:nth-child(2) a::after {
+    margin-left: 12px;
+}
+
+.nav-links li:nth-child(3) a::after {
+    margin-left: 15px;
+}
+
+.nav-links li:nth-child(4) a::after {
+    background-color: #cca110;
+    margin-left: 29px;
+}
+
+
+/*-----------------*
+*----- MAIN -----*/
+
+/* CASA */
+
+.casa {
+    
+    height: 100vh;
+    background-color: red;
+    
+}
+
+.casa-img {
+    height: 30vw;
+}
+
+.casa-img img {
+    height: 100%;
+}
+
+/* SOBRE */
+.sobre {
+    height: 100vh;
+}
+.sobre-image {
+    width: 30vw;
+}
+
+.sobre-image img {
+    width: 100%;
+}
+
+/* GALERIA */
+.galeria {
+    height: 100vh;
+}
+
+.galeria div {
+    width: 30vw;
+}
+
+.galeria div img {
+    width: 100%;
+}
+
+/* CONTACTO */
+.contacto {
+    height: 100vh;
+}
+
+.contacto-image  {
+    width: 30vw;
+}
+
+.contacto-image img {
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    width: 150px;
+    height: 90px;
+    background-color: lightblue;
+    border-radius: 0 100% 0 0;
+    text-align: center;
+    line-height: 50px;
+}
