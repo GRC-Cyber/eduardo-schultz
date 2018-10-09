@@ -6,19 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eduardo Schultz | Blog</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <!-- Start Header -->
     <header>
         <div class="logo">Eduardo <span>Schultz</span></div>
-        <div class="casa-page"><span><a href="#">casa</a></span></div>
+        <div class="casa-page"><span><a href="#casa">casa</a></span></div>
         <nav>
             <ul class="nav-links">
-                <li><a href="#">sobre</a></li>
-                <li><a href="#">galeria</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">contacto</a></li>
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="#galeria">galeria</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contacto">contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -27,81 +30,112 @@
     <!-- Start Main -->
     <main>
         <!-- Start Casa/Home -->
-        <section class="casa">
+        <section id="casa" class="casa">
             <div class="casa-card">
                 <div class="casa-img">
                     <img src="/images/capa.jpg" alt="capa do livro por culpa da madalena">
                 </div>
-                <blockquote>
-                    <p>Quem nunca sonhou ou idealizou um romance repleto de tramas, com pitadas de dissabores? Quantos de nos realmente desejamos ser reprimidos ou submetidos a regras e imposicoes sociais ou religiosas? Nesta leitura suas emocoes serao sucumbidas, te conduzindo para novas prespectivas e fantasias</p>
-                    <cite>- Dra. Claudia Regina Ribeiro, PSICOLOGIA</cite>
-                </blockquote>
-                <a href="#">compra o livro!</a>
+                <div class="flex-box">
+                    <blockquote>
+                        <p>Quem nunca sonhou ou idealizou um romance repleto de tramas, com pitadas de dissabores? Quantos de nos realmente desejamos ser reprimidos ou submetidos a regras e imposicoes sociais ou religiosas? Nesta leitura suas emocoes serao sucumbidas, te conduzindo para novas prespectivas e fantasias...</p>
+                        <cite>- Dra. Claudia Regina Ribeiro, PSICOLOGIA</cite>
+                    </blockquote>
+                    <a href="https://www.chiadobooks.com/livraria/por-culpa-da-madalena" target="_blank">compra o livro!</a>
+                </div>
             </div>
         </section>
         <!-- End Casa/Home -->
 
         <!-- Start Sobre/About -->
-        <section class="sobre">
-            <h2>sobre</h2>
-            <div class="sobre-image">
-                <img src="/images/ao-volante.jpg" alt="Eduardo ao volante">
+        <section id="sobre" class="sobre">
+            <div class="sobre-container">
+                <h2>sobre <small>autor</small></h2>
+                <div class="sobre-image">
+                    <img src="/images/ao-volante.jpg" alt="Eduardo ao volante">
+                </div>
+                <p>Eduardo Schultz Goncalves, camionista de transportes internacionais, nunca escreveu nada na sua vida. Nao tem formacao academica. Sem qualquer orientacao literaria, criou esta, que e a sua primeira obra literaria. Baseando-se apenas no tino, e sob desejos de concretizar um sonho elaborou este livro. com fim exclusivo de divertir o leitor que queira mergulhar no mundo alucinante deste conto.</p>
             </div>
-            <p>Eduardo Schultz Goncalves, camionista de transportes internacionais, nunca escreveu nada na sua vida. Nao tem formacao academica. Sem qualquer orientacao literaria, criou esta, que e a sua primeira obra literaria. Baseando-se apenas no tino, e sob desejos de concretizar um sonho elaborou este livro. com fim exclusivo de divertir o leitor que queira mergulhar no mundo alucinante deste conto.</p>
         </section>
         <!-- End Sobre/About -->
 
         <!-- Start Galeria/Gallery -->
-        <section class="galeria">
-            <h2>galeria</h2>
-            <div><img src="/images/autografo.jpeg" alt="sessao de autografos"></div>
-            <div><img src="/images/cumprimento.jpeg" alt="autor cumprimenta periodista"></div>
-            <div><img src="/images/filhas.jpeg" alt="filhas com o livro na mao"></div>
-            <div><img src="/images/neta.jpeg" alt="neta com o livro na mao"></div>
-            <div><img src="/images/neve.jpeg" alt="autor em contacto com a neve"></div>
-            <div><img src="/images/apresentacao.jpeg" alt="aprensentacao do livro"></div>
+        <h2>galeria</h2>
+        <section id="galeria" class="galeria">
+            <figure class="galeria-item">
+                <img src="/images/apresentacao.jpeg" alt="apresentacao do livro">
+                <figcaption class="galeria-image-caption">Apresentacao do livro</figcaption>
+            </figure>
+
+            <figure class="galeria-item">
+                <img src="/images/autografo.jpeg" alt="dando autografos">
+                <figcaption class="galeria-image-caption">Dando autografos</figcaption>
+            </figure>
+
+            <figure class="galeria-item">
+                <img src="/images/cumprimento.jpeg" alt="cumprimentando periodista">
+                <figcaption class="galeria-image-caption">Cumprimentando pedriodista</figcaption>
+            </figure>
+
+            <figure class="galeria-item">
+                <img src="/images/filhas.jpeg" alt="filhas com o livro">
+                <figcaption class="galeria-image-caption">Filhas com o livro</figcaption>
+            </figure>
+
+            <figure class="galeria-item">
+                <img src="/images/neta.jpeg" alt="neta com o livro">
+                <figcaption class="galeria-image-caption">Neta com o livro</figcaption>
+            </figure>
+
+            <figure class="galeria-item">
+                <img src="/images/neve.jpeg" alt="apreciando a neve">
+                <figcaption class="galeria-image-caption">Apreciando a neve</figcaption>
+            </figure>
         </section>
         <!-- Start Galeria/Gallery -->
 
         <!-- Start Blog -->
-        <section class="blog">
+        <section id="blog" class="blog">
             <h2>blog</h2>
             <article>
-                <h3>titulo do blog</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic provident adipisci modi, optio corrupti voluptate, similique impedit magni distinctio dolor debitis in quo dolore non minus tempora omnis placeat molestias?</p>
+                <h3>tema do mes</h3>
+                <time datetime="03-08-2018">Agosto 8, 2018</time>
+                <p>Lorem ipsum dolor sit amet, consectetur   quo dolore non minus tempora omnis placeat molestias?</p>
             </article>
             <article>
-                    <h3>titulo do blog</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic provident adipisci modi, optio corrupti voluptate, similique impedit magni distinctio dolor debitis in quo dolore non minus tempora omnis placeat molestias?</p>
-                </article>
-                <article>
-                        <h3>titulo do blog</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic provident adipisci modi, optio corrupti voluptate, similique impedit magni distinctio dolor debitis in quo dolore non minus tempora omnis placeat molestias?</p>
-                    </article>
+                <h3>tema do mes</h3>
+                <time datetime="03-07-2018">Julho 7, 2018</time>
+                <p>Lorem ipsum dolor sit amet, consectetur   quo dolore non minus tempora omnis placeat molestias?</p>
+            </article>
+            <article>
+                <h3>tema do mes</h3>
+                <time datetime="03-06-2018">Junho 9, 2018</time>
+                <p>Lorem ipsum dolor sit amet,  provident   debitis in quo dolore non minus tempora omnis placeat molestias?</p>
+            </article>
         </section>
         <!-- End Blog -->
         
         <!-- Start Contacto/Contact -->
-        <section class="contacto">
+        <section id="contacto" class="contacto">
             <h2>Contacto</h2>
-            <div class="contacto-image">
-                <img src="/images/papi-sentado-1.jpg" alt="eduardo sentado">
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta commodi quaerat, totam suscipit temporibus provident deleniti ipsum aliquid eius animi.</p>
-            <div class="social-links">
-                <a href="#">facebook</a>
-                <a href="#">Gmail</a>
-                <a href="">Twitter</a>
+            <div class="card-contacto">
+                <div class="contacto-image">
+                    <img src="/images/papi-sentado-1.jpg" alt="eduardo sentado">
+                </div>
+                <p>Se quiser entrar em contacto com Eduardo Schultz Goncalves, pode faze-lo atraves da seguinte forma:</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-google"></i></a>
+                </div>
             </div>
         </section>
         <!-- End Contacto/Contact -->
-        
     </main>
     <!-- End Main -->
 
     <!-- Start Footer -->
     <footer>
-        <small>Helio Goncalves, 2018</small>
+        <p class="footer">&copy; 2018 Helio Goncalves</p>
     </footer>
     
     

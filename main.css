@@ -18,6 +18,38 @@ body {
     color:#333;
 }
 
+h2 {
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h3 {
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.4;
+}
+
+small {
+    font-size: 1.1rem;
+    color: #888;;
+}
+
+small::before {
+    content: "\0028";
+}
+
+small::after {
+    content: "\0029"
+}
+
 /* Layout Styles */
 
 /*-----------------*
@@ -25,7 +57,8 @@ body {
 
 header {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    min-height: 16vh;
 }
 
 .logo {
@@ -45,7 +78,7 @@ header {
 .casa-page {
     width: 90px;
     height: 90px;
-    background-color: lightblue;
+    background-color: #d2d2d2;
     border-radius: 0 0 0 100%;
     text-align: center;
     line-height: 50px;
@@ -70,7 +103,7 @@ nav {
     right: 18px;
     width: 180px;
     letter-spacing: 1.5px;
-    z-index: -1;
+    
 }
 
 .nav-links {
@@ -142,64 +175,217 @@ nav {
 
 .casa {
     
-    height: 100vh;
-    background-color: red;
+    min-height: 82vh;
+    /* background-color: rgba(255, 0, 0, 0.164); */
     
 }
 
+.casa-card {
+    text-align: center;
+}
+
+.casa-card a {
+    border: 2px solid;
+    padding: 5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    box-shadow: 1px 2px 40px 2px rgba(160, 160, 160, .5);
+    color: inherit;
+    /* animation for the button */
+    animation-name: mybutton;
+    animation-duration: 4s;
+    animation-iteration-count: 6;
+    animation-delay: 3s;
+}
+
+@keyframes mybutton {
+    0% {border-radius:0 }
+    25% {border-top-left-radius:30%;background-color: red; color: #f3f3f3 }
+    50% {border-top-right-radius:30%; }
+    75% {border-bottom-right-radius:30%;background-color: red; color: #f3f3f3 }
+    100% {border-bottom-left-radius:30%; }
+}
+
 .casa-img {
-    height: 30vw;
+    height: 50vw;
+    margin-bottom: 30px;
 }
 
 .casa-img img {
     height: 100%;
 }
 
+blockquote {
+    margin: 0 auto 25px auto;
+    max-width: 280px;
+}
+
+blockquote p {
+    position: relative;
+    
+}
+
+blockquote p::before {
+    content: open-quote;
+    color: #777;
+    font-size: 60px;
+    /* font-weight: bold; */
+    position: absolute;
+    right: 282px;
+    top: -18px;
+}
+
+blockquote cite {
+    color: #888;
+}
+
 /* SOBRE */
 .sobre {
-    height: 100vh;
+    min-height: 101vh;
+    /* background-color: gray; */
+    padding: 50px 25px 0 25px;
+    margin-bottom: 70px;
 }
+
+.sobre-container {
+    margin: 0 auto;
+}
+.sobre-container p {
+    min-width: 150px;
+    padding-top: 25px;
+}
+
 .sobre-image {
-    width: 30vw;
+    width: 70vw;
+    margin: 0 auto;
+    /* box-shadow: 1px 2px 40px 2px rgba(160, 160, 160, .5); */
 }
 
 .sobre-image img {
     width: 100%;
+    box-shadow: 1px 2px 40px 5px rgba(160, 160, 160, .5);
+    filter: grayscale(80%);
 }
 
 /* GALERIA */
 .galeria {
-    height: 100vh;
-}
-
-.galeria div {
-    width: 30vw;
-}
-
-.galeria div img {
     width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.galeria-item {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 1px 2px 40px 2px rgba(160, 160, 160, .5);
+}
+
+.galeria-item img {
+    width: 100%;
+    display: block;
+}
+
+/* BLOG */
+.blog {
+    min-height: 100vh;
+    /* background-color: brown; */
+    padding: 45px 30px 0 30px;
+}
+
+.blog time {
+    color: #888;
 }
 
 /* CONTACTO */
+.card-contacto {
+    margin: 0 auto;
+}
+
 .contacto {
-    height: 100vh;
+    min-height: 101vh;
+    /* background-color: green; */
+    padding: 65px 30px 0 30px;
+    margin-top: -17px;
 }
 
 .contacto-image  {
-    width: 30vw;
+    width: 50vw;
+    margin: 0 auto;
 }
 
 .contacto-image img {
     width: 100%;
+    box-shadow: 1px 2px 7px 2px rgba(160, 160, 160, .5);
 }
 
-/* FOOTER */
+.contacto .social-links {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 35px;
+}
+
+.contacto .social-links a {
+    padding: 10px;
+    color: inherit;
+}
+
+/*-----------------*
+*----- FOOTER -----*/
 
 footer {
+    margin-top: -14px;
     width: 150px;
     height: 90px;
-    background-color: lightblue;
+    background-color: #d9e5e5;
     border-radius: 0 100% 0 0;
     text-align: center;
     line-height: 50px;
+}
+
+footer .footer {
+    text-align: unset;
+    font-size: .88rem;
+    transform: translate(-13%, 75%);
+}
+
+/*-----------------*
+*----- MEDIA QUERIES -----*/
+
+@media only screen and (min-width: 360px) and (orientation: landscape) {
+    .casa-card {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sobre-image {
+        max-width: 50vw;
+    }
+
+    .sobre {
+        padding: 50px 80px;
+        margin-bottom: 20px;
+    }
+
+    .galeria-item {
+        flex-basis: calc(50% - 2rem);
+    }
+
+    .galeria-item img {
+        height: 370px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .blog {
+        padding: 35px 30px 30px;
+    }
+
+    .contacto-image {
+        max-width: 40vw;
+    }
+
+    .contacto {
+        padding: 35px 60px 30px 60px;
+    }
 }
