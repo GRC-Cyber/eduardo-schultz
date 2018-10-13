@@ -134,7 +134,7 @@ small::after
 
     overflow: auto;
 
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .6);
 }
 
 .modal-content
@@ -157,6 +157,8 @@ small::after
 
     cursor: pointer;
     text-decoration: none;
+
+    color: #b1dad8;
 }
 
 /* Layout Styles */
