@@ -21,7 +21,19 @@ This projects consists of building a blog for an author whose only published boo
 
  * Html
  * Css
- > more to be added as the project progress. 
+ * Vanilla JavaScript
+
+### Tools:
+
+    [*] CssLint
+    [*] CssComb
+    [*] Autoprefixer Css
+    [*] Js hint
+    [*] Js beautifier
+    [*] DirtyMarkup Html
+    [*] Html Validator
+    [*] Css Validator
+    [*] Js Validator
 
  Back to the top 
 
